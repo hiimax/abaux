@@ -131,15 +131,7 @@ class _ViewUserScreenState extends State<ViewUserScreen> with Validators {
                         if (!currentFocus.hasPrimaryFocus) {
                           currentFocus.unfocus();
                         }
-
                         final FormState? form = _formKey.currentState;
-                        if (form!.validate()) {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (ctx) => const ViewUserScreen()),
-                          );
-                        }
                       },
                     ),
                     const YMargin(16),
